@@ -1,0 +1,29 @@
+kafka:
+#    producer:
+#      bootstrap-servers: localhost:9092
+#      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+#      value-serializer: org.apache.kafka.common.serialization.JsonSerializer
+spring:
+  data:
+    cassandra:
+      keyspace-name: bootcamp
+      username: pxYfZjZeAqiDKWfyFyihdvcj
+      password: jblwHe0Opy2M1TWWEG7Zn2_1NZcKht5Izg6TunRBhUWl8MciO,8gn0U6eThA5TBQD.wgMCRYUma+7WcSzdUL7RUP+L,zCMKqIPGXM0C+bhxk+3-vHF-ORHS+m+PCk,qG
+      schema-action: create-if-not-exists
+      request:
+        timeout: 10s
+      connection:
+        connect-timeout: 10s
+        init-query-timeout: 10s
+
+
+datastax.astra:
+  secure-connect-bundle: secure-connect-employee.zip
+
+astra.db:
+  id: 03aa7269-7db3-4c38-bb4b-c16d796f103e-1
+  region: asia-south1
+  keyspace: bootcamp
+  application.token: AstraCS:pxYfZjZeAqiDKWfyFyihdvcj:fccde5196923f401b7ab6d9968688d526d1cb5108899247b491f4942336b7c3f
+server:
+  port: 8083
